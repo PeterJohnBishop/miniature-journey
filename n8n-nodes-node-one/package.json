@@ -1,0 +1,28 @@
+{
+  "name": "n8n-nodes-node-one",
+  "version": "0.1.0",
+  "description": "Custom n8n node number one.",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/NodeOne/NodeOne.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "n8n-workflow": "^1.0.0",
+    "typescript": "~5.0.0"
+  },
+  "dependencies": {
+    "gulp": "^5.0.1"
+  }
+}
